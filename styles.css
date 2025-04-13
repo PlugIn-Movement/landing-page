@@ -6,7 +6,7 @@
 }
 
 body {
-    background: linear-gradient(to bottom, rgba(70, 85, 100, 0.6), rgba(255, 160, 100, 0.6)), 
+    background: linear-gradient(to bottom, rgba(0, 95, 115, 0.7), rgba(255, 120, 50, 0.7)), 
                 url('https://source.unsplash.com/random/1920x1080/?city,aerial,sunset') no-repeat center center fixed;
     background-size: cover;
     color: white;
@@ -14,7 +14,7 @@ body {
     text-align: center;
     display: flex;
     flex-direction: column;
-    padding: 40px 20px;
+    padding: 10px 20px 40px;
 }
 
 header {
@@ -30,7 +30,7 @@ header {
 main {
     max-width: 900px;
     width: 100%;
-    margin: 10vh auto auto;
+    margin: 15vh auto auto;
     padding: 20px;
     display: flex;
     flex-direction: column;
