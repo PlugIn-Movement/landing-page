@@ -10,7 +10,7 @@ body {
                 url('https://source.unsplash.com/random/1920x1080/?city,aerial,sunset') no-repeat center center fixed;
     background-size: cover;
     color: white;
-    height: 100vh;
+    min-height: 100vh;
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -32,6 +32,10 @@ main {
     max-width: 900px;
     margin: 0 auto;
     padding: 20px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 h1 {
@@ -71,6 +75,7 @@ h1 {
 .signup-section iframe {
     max-width: 650px;
     margin: 0 auto;
+    width: 100%;
 }
 
 .signup-title {
@@ -122,4 +127,52 @@ iframe[data-tally-src] {
 
 iframe[data-tally-src]::-webkit-scrollbar {
     display: none; /* Chrome, Safari, Opera */
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 48px;
+    }
+    
+    .tagline {
+        font-size: 18px;
+        margin-bottom: 40px;
+    }
+    
+    .header-title {
+        font-size: 28px;
+    }
+    
+    .signup-section {
+        margin-top: 40px;
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        padding: 20px 15px;
+    }
+    
+    h1 {
+        font-size: 36px;
+        margin-bottom: 20px;
+    }
+    
+    .tagline {
+        font-size: 16px;
+        margin-bottom: 30px;
+    }
+    
+    .header-title {
+        font-size: 24px;
+    }
+    
+    main {
+        padding: 10px;
+    }
+    
+    .signup-section {
+        margin-top: 30px;
+    }
 }
