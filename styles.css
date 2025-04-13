@@ -1,0 +1,125 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: linear-gradient(to bottom, rgba(70, 85, 100, 0.6), rgba(255, 160, 100, 0.6)), 
+                url('https://source.unsplash.com/random/1920x1080/?city,aerial,sunset') no-repeat center center fixed;
+    background-size: cover;
+    color: white;
+    height: 100vh;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 40px 20px;
+}
+
+header {
+    padding: 20px 0;
+    text-align: left;
+}
+
+.header-title {
+    font-size: 32px;
+    font-weight: bold;
+}
+
+main {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h1 {
+    font-size: 60px;
+    font-weight: bold;
+    margin-bottom: 30px;
+    line-height: 1.1;
+}
+
+.tagline {
+    font-size: 22px;
+    line-height: 1.5;
+    margin-bottom: 60px;
+}
+
+.cta-button {
+    background-color: #0a9b9b;
+    color: white;
+    border: none;
+    padding: 15px 60px;
+    font-size: 24px;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    text-transform: uppercase;
+    margin: 20px 0 60px;
+}
+
+.signup-section {
+    margin-top: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.signup-section iframe {
+    max-width: 650px;
+    margin: 0 auto;
+}
+
+.signup-title {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.email-input {
+    width: 100%;
+    max-width: 600px;
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: none;
+    font-size: 18px;
+}
+
+.subscribe-button {
+    background-color: #0a9b9b;
+    color: white;
+    border: none;
+    padding: 15px 60px;
+    font-size: 24px;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+footer {
+    margin-top: 40px;
+    padding: 20px;
+}
+
+.donate-link {
+    color: #0a9b9b;
+    font-size: 24px;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Additional styles for the Tally iframe */
+iframe[data-tally-src] {
+    overflow: hidden !important;
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none; /* IE and Edge */
+}
+
+iframe[data-tally-src]::-webkit-scrollbar {
+    display: none; /* Chrome, Safari, Opera */
+}
