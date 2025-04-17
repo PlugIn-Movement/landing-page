@@ -17,12 +17,14 @@ body {
     text-align: center;
     display: flex;
     flex-direction: column;
+    align-items: center;
     padding: 10px 20px 40px;
 }
 
 header {
-    padding: 20px 0;
+    width: 100%;
     text-align: left;
+    padding: 10px 0;
 }
 
 .header-title {
@@ -33,7 +35,7 @@ header {
 main {
     max-width: 900px;
     width: 100%;
-    margin: 15vh auto auto;
+    margin-top: 5vh;
     padding: 20px;
     display: flex;
     flex-direction: column;
@@ -52,7 +54,7 @@ h1 {
 .tagline {
     font-size: 22px;
     line-height: 1.5;
-    margin-bottom: 40px;
+    margin-bottom: 30px;
 }
 
 .cta-button {
@@ -78,8 +80,8 @@ h1 {
 
 .signup-section iframe {
     max-width: 650px;
-    margin: 0 auto;
     width: 100%;
+    border: none;
 }
 
 .signup-title {
@@ -122,61 +124,194 @@ footer {
     font-weight: bold;
 }
 
-/* Additional styles for the Tally iframe */
+/* Tally iframe scrollbar removal */
 iframe[data-tally-src] {
     overflow: hidden !important;
-    scrollbar-width: none; /* Firefox */
-    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none;
+    -ms-overflow-style: none;
 }
 
 iframe[data-tally-src]::-webkit-scrollbar {
-    display: none; /* Chrome, Safari, Opera */
+    display: none;
 }
 
-/* Responsive styles */
+/* Tablet adjustments */
 @media (max-width: 768px) {
     h1 {
-        font-size: 48px;
+        font-size: 46px;
+        margin-bottom: 20px;
     }
-    
+
     .tagline {
         font-size: 18px;
-        margin-bottom: 30px;
+        margin-bottom: 25px;
     }
-    
+
     .header-title {
-        font-size: 28px;
+        font-size: 26px;
     }
-    
-    .signup-section {
-        margin-top: 20px;
+
+    main {
+        padding: 15px;
     }
 }
 
+/* Mobile layout */
 @media (max-width: 480px) {
     body {
         padding: 20px 15px;
     }
-    
+
     h1 {
         font-size: 36px;
         margin-bottom: 20px;
     }
-    
+
     .tagline {
         font-size: 16px;
         margin-bottom: 20px;
     }
-    
+
     .header-title {
-        font-size: 24px;
+        font-size: 22px;
     }
-    
+
     main {
         padding: 10px;
+        margin-top: 3vh;
     }
-    
+
     .signup-section {
         margin-top: 20px;
     }
+
+    .cta-button,
+    .subscribe-button {
+        font-size: 18px;
+        padding: 12px 30px;
+    }
+}
+
+/* === Layout for Plugin Movement Join Page === */
+
+.header-bar {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 2.5rem 2rem 1.5rem;
+  }
+  
+  .logo {
+    max-width: 220px;
+    height: auto;
+    margin-bottom: 3rem; /* bumped from 2.5rem */
+}
+  
+  @media (max-width: 640px) {
+    .header-bar {
+      justify-content: center;
+    }
+  }
+  
+  h1 {
+    font-size: 2.8rem;
+    font-weight: bold;
+    line-height: 1.2;
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 1.5rem;
+  }
+  
+  @media (max-width: 600px) {
+    h1 {
+      font-size: 2.2rem;
+    }
+  }
+  
+  /* --- Section Blocks --- */
+  
+  .subheadline,
+  .callout,
+  .cta,
+  .privacy-note {
+    text-align: center;
+  }
+  
+  .subheadline {
+    font-size: 1.1rem;
+    color: #ccc;
+    margin-top: 1rem;
+  }
+  
+  .callout {
+    font-size: 1.1rem;
+    color: #ccc;
+    margin: 2rem 0 1rem;
+  }
+  
+  .cta {
+    font-size: 1rem;
+    font-weight: bold;
+    margin: 1rem 0;
+  }
+  
+  .privacy-note {
+    font-size: 0.85rem;
+    color: #aaa;
+    margin-bottom: 2rem;
+  }
+  
+  .tagline {
+    font-size: 1.2rem;
+    margin: 1rem 0 1.5rem;
+    color: white;
+    text-align: center;
+  }
+  
+  .body-copy {
+    font-size: 1rem;
+    color: #ccc;
+    max-width: 650px;
+    margin: 0 auto 1.5rem;
+    line-height: 1.6;
+    text-align: center;
+  }
+  
+  .deliverables {
+    font-size: 0.95rem;
+    color: #ccc;
+    list-style: none;
+    padding: 0;
+    margin: 1rem auto 2rem;
+    max-width: 650px;
+    line-height: 1.8;
+    text-align: left;
+  }  
+  /* === Plugin Movement Mobile Enhancements === */
+
+@media (max-width: 480px) {
+  .logo {
+    margin-bottom: 2.75rem;
+  }
+
+  .body-copy,
+  .deliverables,
+  .callout,
+  .cta,
+  .privacy-note {
+    font-size: 1.05rem;
+  }
+
+  .subheadline {
+    font-size: 1.1rem;
+  }
+
+  .cta {
+    line-height: 1.6;
+    padding: 0.5rem;
+  }
+
+  .deliverables li {
+    word-break: keep-all;
+  }
 }
