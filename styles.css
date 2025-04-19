@@ -256,8 +256,11 @@ iframe[data-tally-src]::-webkit-scrollbar {
   }
   
   .privacy-note {
-    font-size: 0.85rem;
-    color: #aaa;
+    font-size: 0.9rem;
+    color: #f0f0f0;
+    margin-bottom: 2rem;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
     margin-bottom: 2rem;
   }
   
@@ -313,5 +316,72 @@ iframe[data-tally-src]::-webkit-scrollbar {
 
   .deliverables li {
     word-break: keep-all;
+  }
+}
+
+.cta-link {
+  color: #ffffff;
+  font-size: 1.05rem;
+  font-weight: 500;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  transition: color 0.3s ease;
+}
+
+.cta-link:hover {
+  color: #0a9b9b;
+}
+/* === Accessibility Enhancements === */
+
+/* Improve base legibility */
+body, p, li {
+  font-size: 1rem;
+  line-height: 1.6;
+  letter-spacing: 0.2px;
+}
+
+/* Ensure text contrast */
+body, p, li, .body-copy, .tagline, .subheadline {
+  color: #f2f2f2; /* off-white for better contrast on dark backgrounds */
+}
+
+/* High-contrast link styling */
+a {
+  color: #00e6e6;
+  text-decoration: underline;
+}
+a:hover,
+a:focus {
+  color: #fff;
+  background-color: #005f5f;
+  outline: 2px solid #fff;
+}
+
+/* Ensure text in all UI elements is large enough */
+button, input, textarea, select {
+  font-size: 1rem;
+}
+
+/* Increase visibility of focus outlines */
+*:focus {
+  outline: 3px solid #00e6e6;
+  outline-offset: 2px;
+}
+
+/* Improve readability of checklist emojis on colored background */
+.deliverables li {
+  font-size: 1.1rem;
+  color: #ffffff;
+}
+
+/* Sufficient padding for all interactive elements */
+button, .cta-button, .subscribe-button {
+  padding: 0.75rem 1.5rem;
+}
+
+/* Responsive resizing */
+@media (max-width: 768px) {
+  body {
+    font-size: 1.05rem;
   }
 }
